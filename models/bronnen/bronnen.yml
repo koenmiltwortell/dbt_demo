@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: product_data
+    database: SANDBOX_KOEN
+    schema: PUBLIC
+    tables:
+      - name: awesome_piechart
