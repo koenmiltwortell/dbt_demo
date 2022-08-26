@@ -31,5 +31,5 @@ models:
           +schema: DIM
           +materialized: table
         fct:
-          +schema: DIM
+          +schema: FCT
           +materialized: table

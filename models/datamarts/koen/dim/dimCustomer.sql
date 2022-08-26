@@ -9,4 +9,4 @@ SELECT
 ,   cus.C_PHONE             AS CUSTOMER_PHONE
 FROM {{ source( 'snowflake_sample', 'CUSTOMER' ) }} cus
 LEFT JOIN {{ source( 'snowflake_sample', 'NATION' ) }} nat ON nat.N_NATIONKEY = cus.C_NATIONKEY
-left join {{ source( 'snowflake_sample', 'REGION' ) }} reg ON reg.R_REGIONKEY = nat.N_REGIONKEY
+LEFT JOIN {{ source( 'snowflake_sample', 'REGION' ) }} reg ON reg.R_REGIONKEY = nat.N_REGIONKEY
