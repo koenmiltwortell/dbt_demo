@@ -14,8 +14,8 @@ sources:
       - name: PART
       - name: PARTSUPP
 
-  - name: JOBLOG
+  - name: joblog_stg
     database: KENNISWEEKEND_DBT
     schema: STG
     tables:
-      - name: JOGLOG
+      - name: JOBLOG
