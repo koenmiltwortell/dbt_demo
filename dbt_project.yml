@@ -21,10 +21,15 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 models:
+
   DBT_Demo:
-    koen:
-      +database: "SANDBOX_KOEN"
-      
-      products:
-        +schema: PRODUCTS
-        +materialized: table
+    datamarts:
+      koen:
+        +database: "KENNISWEEKEND_DBT"
+
+        dim:
+          +schema: DIM
+          +materialized: table
+        fct:
+          +schema: DIM
+          +materialized: table

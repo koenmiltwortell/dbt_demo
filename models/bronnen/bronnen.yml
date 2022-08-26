@@ -6,3 +6,17 @@ sources:
     schema: PUBLIC
     tables:
       - name: awesome_piechart
+
+sources:
+  - name: snowflake_sample
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: CUSTOMER
+      - name: LINEITEM
+      - name: NATION
+      - name: REGION
+      - name: ORDERS
+      - name: SUPPLIER
+      - name: PART
+      - name: PARTSUPP
