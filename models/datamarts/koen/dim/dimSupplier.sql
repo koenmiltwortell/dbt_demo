@@ -1,3 +1,5 @@
+{{ config(alias='Supplier') }}
+
 SELECT 
     sup.S_SUPPKEY           AS SUPPLIER_ID
 ,   sup.S_NAME              AS SUPPLIER_NAME
