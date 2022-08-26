@@ -30,3 +30,6 @@ models:
         dim:
           +schema: DIM
           +materialized: table
+        fct:
+          +schema: DIM
+          +materialized: table
