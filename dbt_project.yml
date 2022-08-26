@@ -33,3 +33,4 @@ models:
         fct:
           +schema: FCT
           +materialized: table
+          
