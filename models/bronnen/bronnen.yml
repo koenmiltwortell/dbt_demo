@@ -1,13 +1,6 @@
 version: 2
 
 sources:
-  - name: product_data
-    database: SANDBOX_KOEN
-    schema: PUBLIC
-    tables:
-      - name: awesome_piechart
-
-sources:
   - name: snowflake_sample
     database: SNOWFLAKE_SAMPLE_DATA
     schema: TPCH_SF1
@@ -20,3 +13,9 @@ sources:
       - name: SUPPLIER
       - name: PART
       - name: PARTSUPP
+
+  - name: JOBLOG
+    database: KENNISWEEKEND_DBT
+    schema: STG
+    tables:
+      - name: JOGLOG
